@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 $fontPadrao: 'Roboto', sans-serif;
-$fontTitulo: 'Open Sans', sans-serif;
+$fontTitulo: 'Poppins', sans-serif;
+
 
 $colorElements: #4c9cef;
 $colorNavHover: #4267b2;
@@ -17,6 +18,12 @@ $paddingBoot: 65px;
 
 $borderPrimary: 3px solid  $colorBorder;
 $borderSecondary: 1px solid  $colorBorder;
+
+$boxMarginTitleTop: 20px;
+$boxMarginTitleLeft: 40px;
+$boxMarginTextLeft: 40px;
+$boxMarginTextRight: 40px;
+$boxHeight: 125px;
 
 body {
     height: 100%;
@@ -108,13 +115,11 @@ body {
     h2{
         font-weight: bold;
         text-align: center;
-    }
-
-    h4{
-        margin-top: 5px;
-        margin-left: 20px;
-        margin-top: 20px;
-        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-top: 2px dashed $colorBorder;
+        border-bottom: 1px dashed $colorBorder;
+        box-shadow: inset 0 -1px 0 0 $colorBorder, inset 0 1px 0 0 $colorBorder, 0 1px 0 0 $colorBorder, 0 -1px 0 0 $colorBorder;
     }
 
     .col-sm-6{
@@ -132,6 +137,20 @@ body {
             border-right-color: $colorElements;
 
             margin-top: 30px;
+
+            height: $boxHeight;
+
+            h4{
+                margin-left: $boxMarginTitleLeft;
+                margin-top: $boxMarginTitleTop;
+                text-align: left;
+                font-weight: bold;
+            }
+        
+            p{
+                margin-left: $boxMarginTextLeft;
+                margin-right: $boxMarginTextRight;
+            }        
         }
     }
 }
