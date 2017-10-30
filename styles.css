@@ -42,7 +42,7 @@ body {
 
 .home {
   background-color: #f1f1f1;
-  height: 650px; }
+  min-height: 650px; }
   .home .margin-top-150 {
     height: 150px; }
 
@@ -51,7 +51,7 @@ body {
 .eventos,
 .adicionais,
 .contato {
-  height: 650px;
+  min-height: 650px;
   background-color: white;
   padding-top: 65px; }
   .formacao h2,
@@ -107,10 +107,10 @@ body {
   .contato .col-sm-6 .graduacao,
   .contato .col-sm-6 .profissional,
   .contato .col-sm-6 .conhecimentos {
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    border-bottom-right-radius: 225px 15px;
-    border-bottom-left-radius: 15px 255px;
+    border-top-left-radius: 255px 25px;
+    border-top-right-radius: 25px 225px;
+    border-bottom-right-radius: 225px 25px;
+    border-bottom-left-radius: 25px 255px;
     border: solid 7px #4267b2;
     border-left-color: #4c9cef;
     border-right-color: #4c9cef;

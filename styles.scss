@@ -91,7 +91,7 @@ body {
 
 .home{
     background-color: $colorHomeFundo;
-    height: $pageSize;
+    min-height: $pageSize;
 
     .margin-top-150 {
         height: 150px;
@@ -104,7 +104,7 @@ body {
 .adicionais,
 .contato
 {
-    height: $pageSize;
+    min-height: $pageSize;
     background-color: $colorAllFundo;
     padding-top: $paddingBoot;
 
@@ -130,10 +130,10 @@ body {
         .graduacao,
         .profissional,
         .conhecimentos{
-            border-top-left-radius: 255px 15px;
-            border-top-right-radius: 15px 225px;
-            border-bottom-right-radius: 225px 15px;
-            border-bottom-left-radius: 15px 255px;
+            border-top-left-radius: 255px 25px;
+            border-top-right-radius: 25px 225px;
+            border-bottom-right-radius: 225px 25px;
+            border-bottom-left-radius: 25px 255px;
         
             border: solid 7px $colorBorder;
             border-left-color: $colorElements;
