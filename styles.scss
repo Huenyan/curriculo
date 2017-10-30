@@ -23,7 +23,8 @@ $boxMarginTitleTop: 20px;
 $boxMarginTitleLeft: 40px;
 $boxMarginTextLeft: 40px;
 $boxMarginTextRight: 40px;
-$boxHeight: 125px;
+$boxMarginTextBot: 5px;
+$boxHeight: 140px;
 
 body {
     height: 100%;
@@ -126,7 +127,9 @@ body {
         .fundamental,
         .tecnico,
         .medio,
-        .graduacao{
+        .graduacao,
+        .profissional,
+        .conhecimentos{
             border-top-left-radius: 255px 15px;
             border-top-right-radius: 15px 225px;
             border-bottom-right-radius: 225px 15px;
@@ -138,7 +141,7 @@ body {
 
             margin-top: 30px;
 
-            height: $boxHeight;
+            min-height: $boxHeight;
 
             h4{
                 margin-left: $boxMarginTitleLeft;
@@ -150,6 +153,7 @@ body {
             p{
                 margin-left: $boxMarginTextLeft;
                 margin-right: $boxMarginTextRight;
+                margin-bottom: $boxMarginTextBot;
             }        
         }
     }

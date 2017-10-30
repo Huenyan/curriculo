@@ -81,22 +81,32 @@ body {
   .formacao .col-sm-6 .tecnico,
   .formacao .col-sm-6 .medio,
   .formacao .col-sm-6 .graduacao,
+  .formacao .col-sm-6 .profissional,
+  .formacao .col-sm-6 .conhecimentos,
   .experiencia .col-sm-6 .fundamental,
   .experiencia .col-sm-6 .tecnico,
   .experiencia .col-sm-6 .medio,
   .experiencia .col-sm-6 .graduacao,
+  .experiencia .col-sm-6 .profissional,
+  .experiencia .col-sm-6 .conhecimentos,
   .eventos .col-sm-6 .fundamental,
   .eventos .col-sm-6 .tecnico,
   .eventos .col-sm-6 .medio,
   .eventos .col-sm-6 .graduacao,
+  .eventos .col-sm-6 .profissional,
+  .eventos .col-sm-6 .conhecimentos,
   .adicionais .col-sm-6 .fundamental,
   .adicionais .col-sm-6 .tecnico,
   .adicionais .col-sm-6 .medio,
   .adicionais .col-sm-6 .graduacao,
+  .adicionais .col-sm-6 .profissional,
+  .adicionais .col-sm-6 .conhecimentos,
   .contato .col-sm-6 .fundamental,
   .contato .col-sm-6 .tecnico,
   .contato .col-sm-6 .medio,
-  .contato .col-sm-6 .graduacao {
+  .contato .col-sm-6 .graduacao,
+  .contato .col-sm-6 .profissional,
+  .contato .col-sm-6 .conhecimentos {
     border-top-left-radius: 255px 15px;
     border-top-right-radius: 15px 225px;
     border-bottom-right-radius: 225px 15px;
@@ -105,27 +115,37 @@ body {
     border-left-color: #4c9cef;
     border-right-color: #4c9cef;
     margin-top: 30px;
-    height: 125px; }
+    min-height: 140px; }
     .formacao .col-sm-6 .fundamental h4,
     .formacao .col-sm-6 .tecnico h4,
     .formacao .col-sm-6 .medio h4,
     .formacao .col-sm-6 .graduacao h4,
+    .formacao .col-sm-6 .profissional h4,
+    .formacao .col-sm-6 .conhecimentos h4,
     .experiencia .col-sm-6 .fundamental h4,
     .experiencia .col-sm-6 .tecnico h4,
     .experiencia .col-sm-6 .medio h4,
     .experiencia .col-sm-6 .graduacao h4,
+    .experiencia .col-sm-6 .profissional h4,
+    .experiencia .col-sm-6 .conhecimentos h4,
     .eventos .col-sm-6 .fundamental h4,
     .eventos .col-sm-6 .tecnico h4,
     .eventos .col-sm-6 .medio h4,
     .eventos .col-sm-6 .graduacao h4,
+    .eventos .col-sm-6 .profissional h4,
+    .eventos .col-sm-6 .conhecimentos h4,
     .adicionais .col-sm-6 .fundamental h4,
     .adicionais .col-sm-6 .tecnico h4,
     .adicionais .col-sm-6 .medio h4,
     .adicionais .col-sm-6 .graduacao h4,
+    .adicionais .col-sm-6 .profissional h4,
+    .adicionais .col-sm-6 .conhecimentos h4,
     .contato .col-sm-6 .fundamental h4,
     .contato .col-sm-6 .tecnico h4,
     .contato .col-sm-6 .medio h4,
-    .contato .col-sm-6 .graduacao h4 {
+    .contato .col-sm-6 .graduacao h4,
+    .contato .col-sm-6 .profissional h4,
+    .contato .col-sm-6 .conhecimentos h4 {
       margin-left: 40px;
       margin-top: 20px;
       text-align: left;
@@ -134,23 +154,34 @@ body {
     .formacao .col-sm-6 .tecnico p,
     .formacao .col-sm-6 .medio p,
     .formacao .col-sm-6 .graduacao p,
+    .formacao .col-sm-6 .profissional p,
+    .formacao .col-sm-6 .conhecimentos p,
     .experiencia .col-sm-6 .fundamental p,
     .experiencia .col-sm-6 .tecnico p,
     .experiencia .col-sm-6 .medio p,
     .experiencia .col-sm-6 .graduacao p,
+    .experiencia .col-sm-6 .profissional p,
+    .experiencia .col-sm-6 .conhecimentos p,
     .eventos .col-sm-6 .fundamental p,
     .eventos .col-sm-6 .tecnico p,
     .eventos .col-sm-6 .medio p,
     .eventos .col-sm-6 .graduacao p,
+    .eventos .col-sm-6 .profissional p,
+    .eventos .col-sm-6 .conhecimentos p,
     .adicionais .col-sm-6 .fundamental p,
     .adicionais .col-sm-6 .tecnico p,
     .adicionais .col-sm-6 .medio p,
     .adicionais .col-sm-6 .graduacao p,
+    .adicionais .col-sm-6 .profissional p,
+    .adicionais .col-sm-6 .conhecimentos p,
     .contato .col-sm-6 .fundamental p,
     .contato .col-sm-6 .tecnico p,
     .contato .col-sm-6 .medio p,
-    .contato .col-sm-6 .graduacao p {
+    .contato .col-sm-6 .graduacao p,
+    .contato .col-sm-6 .profissional p,
+    .contato .col-sm-6 .conhecimentos p {
       margin-left: 40px;
-      margin-right: 40px; }
+      margin-right: 40px;
+      margin-bottom: 5px; }
 
 /*# sourceMappingURL=styles.css.map */
