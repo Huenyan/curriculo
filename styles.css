@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  color: black; }
+
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #4c9cef;
+  margin: 0px;
+  padding: 0px; }
+  .navbar ul li {
+    float: left; }
+  .navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+  .navbar ul li a:hover:not(.active) {
+    background-color: #4267b2; }
+
+.table {
+  margin-bottom: 0px;
+  border: 3px solid #4267b2; }
+  .table tbody tr td {
+    border: 1px solid #4267b2; }
+  .table tbody td:nth-child(1) {
+    color: black; }
+  .table tbody td:nth-child(2) {
+    color: white;
+    background: #4c9cef;
+    font-weight: bold; }
+
+.profile {
+  margin-top: 8px;
+  text-align: center; }
+  .profile img {
+    border: 3px solid #4267b2; }
+
+.home {
+  background-color: #f1f1f1;
+  height: 650px; }
+  .home .margin-top-150 {
+    height: 150px; }
+
+.formacao,
+.experiencia,
+.eventos,
+.adicionais,
+.contato {
+  height: 650px;
+  background-color: white;
+  padding-top: 65px; }
+  .formacao h2,
+  .formacao h4,
+  .experiencia h2,
+  .experiencia h4,
+  .eventos h2,
+  .eventos h4,
+  .adicionais h2,
+  .adicionais h4,
+  .contato h2,
+  .contato h4 {
+    font-family: "Open Sans", sans-serif; }
+  .formacao h2,
+  .experiencia h2,
+  .eventos h2,
+  .adicionais h2,
+  .contato h2 {
+    font-weight: bold;
+    text-align: center; }
+  .formacao h4,
+  .experiencia h4,
+  .eventos h4,
+  .adicionais h4,
+  .contato h4 {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: left; }
+  .formacao .col-sm-6 .fundamental,
+  .formacao .col-sm-6 .tecnico,
+  .formacao .col-sm-6 .medio,
+  .formacao .col-sm-6 .graduacao,
+  .experiencia .col-sm-6 .fundamental,
+  .experiencia .col-sm-6 .tecnico,
+  .experiencia .col-sm-6 .medio,
+  .experiencia .col-sm-6 .graduacao,
+  .eventos .col-sm-6 .fundamental,
+  .eventos .col-sm-6 .tecnico,
+  .eventos .col-sm-6 .medio,
+  .eventos .col-sm-6 .graduacao,
+  .adicionais .col-sm-6 .fundamental,
+  .adicionais .col-sm-6 .tecnico,
+  .adicionais .col-sm-6 .medio,
+  .adicionais .col-sm-6 .graduacao,
+  .contato .col-sm-6 .fundamental,
+  .contato .col-sm-6 .tecnico,
+  .contato .col-sm-6 .medio,
+  .contato .col-sm-6 .graduacao {
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius: 15px 255px;
+    border: solid 7px #4267b2;
+    border-left-color: #4c9cef;
+    border-right-color: #4c9cef;
+    margin-top: 30px; }
+
+/*# sourceMappingURL=styles.css.map */

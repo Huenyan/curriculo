@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$fontPadrao: 'Roboto', sans-serif;
+$fontTitulo: 'Open Sans', sans-serif;
+
+$colorElements: #4c9cef;
+$colorNavHover: #4267b2;
+$colorFontPadrao: black;
+$colorFontFundo: white; 
+$colorHomeFundo: #f1f1f1;
+$colorAllFundo: white;
+$colorBorder: #4267b2;
+
+$pageSize: 650px;
+$paddingBoot: 65px;
+
+$borderPrimary: 3px solid  $colorBorder;
+$borderSecondary: 1px solid  $colorBorder;
+
+body {
+    height: 100%;
+    font-family: $fontPadrao;
+    color: $colorFontPadrao;
+}
+
+.navbar {
+    ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: $colorElements; 
+    margin: 0px;
+    padding: 0px;
+
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: $colorFontFundo;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: $colorNavHover;
+        }
+    }
+}
+
+.table {
+    margin-bottom: 0px;
+    border: $borderPrimary;
+
+    tbody{
+        tr{
+            td{
+                border: $borderSecondary;
+            }
+        }
+
+        td:nth-child(1) {
+            color: $colorFontPadrao;
+        }
+
+        td:nth-child(2) {
+            color: $colorFontFundo;
+            background: $colorElements;
+            font-weight: bold;
+        }
+    }
+}
+
+.profile{
+    margin-top: 8px;
+    text-align: center;
+    img{
+        border: $borderPrimary;
+    }
+}
+
+.home{
+    background-color: $colorHomeFundo;
+    height: $pageSize;
+
+    .margin-top-150 {
+        height: 150px;
+    }
+}
+
+.formacao,
+.experiencia,
+.eventos,
+.adicionais,
+.contato
+{
+    height: $pageSize;
+    background-color: $colorAllFundo;
+    padding-top: $paddingBoot;
+
+    h2,
+    h4{
+        font-family: $fontTitulo;
+    }
+
+    h2{
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h4{
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .col-sm-6{
+        .fundamental,
+        .tecnico,
+        .medio,
+        .graduacao{
+            border-top-left-radius: 255px 15px;
+            border-top-right-radius: 15px 225px;
+            border-bottom-right-radius: 225px 15px;
+            border-bottom-left-radius: 15px 255px;
+        
+            border: solid 7px $colorBorder;
+            border-left-color: $colorElements;
+            border-right-color: $colorElements;
+
+            margin-top: 30px;
+        }
+    }
+}
