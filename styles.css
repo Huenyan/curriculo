@@ -5,6 +5,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: black; }
 
+.margin-idioma {
+  margin-top: 70px; }
+
 .navbar ul {
   list-style-type: none;
   overflow: hidden;
@@ -29,10 +32,9 @@ body {
     border: 3px solid #4267b2; }
 
 .home {
-  background-color: #f1f1f1;
   min-height: 650px; }
-  .home .margin-top-150 {
-    height: 150px; }
+  .home .margin-top {
+    height: 125px; }
   .home .table {
     margin-bottom: 0px;
     border: 3px solid #4267b2; }
@@ -44,6 +46,22 @@ body {
       color: white;
       background: #4c9cef;
       font-weight: bold; }
+  .home .descricao {
+    border-top-left-radius: 255px 25px;
+    border-top-right-radius: 25px 225px;
+    border-bottom-right-radius: 225px 25px;
+    border-bottom-left-radius: 25px 255px;
+    border: solid 7px #4267b2;
+    border-left-color: #4c9cef;
+    border-right-color: #4c9cef;
+    margin-top: 30px;
+    min-height: 125px; }
+    .home .descricao p {
+      padding-top: 20px;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-bottom: 15px;
+      text-align: justify; }
 
 .formacao,
 .experiencia,
@@ -51,19 +69,31 @@ body {
 .adicionais,
 .contato {
   min-height: 650px;
-  background-color: white;
-  padding-top: 65px; }
+  padding-top: 40px; }
   .formacao h2,
+  .formacao h3,
   .formacao h4,
   .experiencia h2,
+  .experiencia h3,
   .experiencia h4,
   .eventos h2,
+  .eventos h3,
   .eventos h4,
   .adicionais h2,
+  .adicionais h3,
   .adicionais h4,
   .contato h2,
+  .contato h3,
   .contato h4 {
     font-family: "Poppins", sans-serif; }
+  .formacao h3,
+  .experiencia h3,
+  .eventos h3,
+  .adicionais h3,
+  .contato h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0px; }
   .formacao h2,
   .experiencia h2,
   .eventos h2,
@@ -73,9 +103,7 @@ body {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
-    border-top: 2px dashed #4267b2;
-    border-bottom: 1px dashed #4267b2;
-    box-shadow: inset 0 -1px 0 0 #4267b2, inset 0 1px 0 0 #4267b2, 0 1px 0 0 #4267b2, 0 -1px 0 0 #4267b2; }
+    border-bottom: 1px solid #4267b2; }
   .formacao .fundamental,
   .formacao .tecnico,
   .formacao .medio,
@@ -97,68 +125,57 @@ body {
   .contato .medio,
   .contato .graduacao {
     min-height: 125px; }
-  .formacao .profissional,
-  .formacao .conhecimentos,
-  .formacao .adicional,
-  .experiencia .profissional,
-  .experiencia .conhecimentos,
-  .experiencia .adicional,
-  .eventos .profissional,
-  .eventos .conhecimentos,
-  .eventos .adicional,
-  .adicionais .profissional,
-  .adicionais .conhecimentos,
-  .adicionais .adicional,
-  .contato .profissional,
-  .contato .conhecimentos,
-  .contato .adicional {
-    min-height: 175px; }
   .formacao .evento,
   .experiencia .evento,
   .eventos .evento,
   .adicionais .evento,
   .contato .evento {
-    min-height: 275px; }
+    min-height: 175px; }
   .formacao .fundamental,
   .formacao .tecnico,
   .formacao .medio,
   .formacao .graduacao,
-  .formacao .profissional,
-  .formacao .conhecimentos,
-  .formacao .adicional,
+  .formacao .complementar,
   .formacao .evento,
+  .formacao .empresa,
+  .formacao .competencia,
+  .formacao .adicional,
   .experiencia .fundamental,
   .experiencia .tecnico,
   .experiencia .medio,
   .experiencia .graduacao,
-  .experiencia .profissional,
-  .experiencia .conhecimentos,
-  .experiencia .adicional,
+  .experiencia .complementar,
   .experiencia .evento,
+  .experiencia .empresa,
+  .experiencia .competencia,
+  .experiencia .adicional,
   .eventos .fundamental,
   .eventos .tecnico,
   .eventos .medio,
   .eventos .graduacao,
-  .eventos .profissional,
-  .eventos .conhecimentos,
-  .eventos .adicional,
+  .eventos .complementar,
   .eventos .evento,
+  .eventos .empresa,
+  .eventos .competencia,
+  .eventos .adicional,
   .adicionais .fundamental,
   .adicionais .tecnico,
   .adicionais .medio,
   .adicionais .graduacao,
-  .adicionais .profissional,
-  .adicionais .conhecimentos,
-  .adicionais .adicional,
+  .adicionais .complementar,
   .adicionais .evento,
+  .adicionais .empresa,
+  .adicionais .competencia,
+  .adicionais .adicional,
   .contato .fundamental,
   .contato .tecnico,
   .contato .medio,
   .contato .graduacao,
-  .contato .profissional,
-  .contato .conhecimentos,
-  .contato .adicional,
-  .contato .evento {
+  .contato .complementar,
+  .contato .evento,
+  .contato .empresa,
+  .contato .competencia,
+  .contato .adicional {
     border-top-left-radius: 255px 25px;
     border-top-right-radius: 25px 225px;
     border-bottom-right-radius: 225px 25px;
@@ -168,45 +185,95 @@ body {
     border-right-color: #4c9cef;
     margin-top: 30px; }
     .formacao .fundamental h4,
+    .formacao .fundamental h5,
     .formacao .tecnico h4,
+    .formacao .tecnico h5,
     .formacao .medio h4,
+    .formacao .medio h5,
     .formacao .graduacao h4,
-    .formacao .profissional h4,
-    .formacao .conhecimentos h4,
-    .formacao .adicional h4,
+    .formacao .graduacao h5,
+    .formacao .complementar h4,
+    .formacao .complementar h5,
     .formacao .evento h4,
+    .formacao .evento h5,
+    .formacao .empresa h4,
+    .formacao .empresa h5,
+    .formacao .competencia h4,
+    .formacao .competencia h5,
+    .formacao .adicional h4,
+    .formacao .adicional h5,
     .experiencia .fundamental h4,
+    .experiencia .fundamental h5,
     .experiencia .tecnico h4,
+    .experiencia .tecnico h5,
     .experiencia .medio h4,
+    .experiencia .medio h5,
     .experiencia .graduacao h4,
-    .experiencia .profissional h4,
-    .experiencia .conhecimentos h4,
-    .experiencia .adicional h4,
+    .experiencia .graduacao h5,
+    .experiencia .complementar h4,
+    .experiencia .complementar h5,
     .experiencia .evento h4,
+    .experiencia .evento h5,
+    .experiencia .empresa h4,
+    .experiencia .empresa h5,
+    .experiencia .competencia h4,
+    .experiencia .competencia h5,
+    .experiencia .adicional h4,
+    .experiencia .adicional h5,
     .eventos .fundamental h4,
+    .eventos .fundamental h5,
     .eventos .tecnico h4,
+    .eventos .tecnico h5,
     .eventos .medio h4,
+    .eventos .medio h5,
     .eventos .graduacao h4,
-    .eventos .profissional h4,
-    .eventos .conhecimentos h4,
-    .eventos .adicional h4,
+    .eventos .graduacao h5,
+    .eventos .complementar h4,
+    .eventos .complementar h5,
     .eventos .evento h4,
+    .eventos .evento h5,
+    .eventos .empresa h4,
+    .eventos .empresa h5,
+    .eventos .competencia h4,
+    .eventos .competencia h5,
+    .eventos .adicional h4,
+    .eventos .adicional h5,
     .adicionais .fundamental h4,
+    .adicionais .fundamental h5,
     .adicionais .tecnico h4,
+    .adicionais .tecnico h5,
     .adicionais .medio h4,
+    .adicionais .medio h5,
     .adicionais .graduacao h4,
-    .adicionais .profissional h4,
-    .adicionais .conhecimentos h4,
-    .adicionais .adicional h4,
+    .adicionais .graduacao h5,
+    .adicionais .complementar h4,
+    .adicionais .complementar h5,
     .adicionais .evento h4,
+    .adicionais .evento h5,
+    .adicionais .empresa h4,
+    .adicionais .empresa h5,
+    .adicionais .competencia h4,
+    .adicionais .competencia h5,
+    .adicionais .adicional h4,
+    .adicionais .adicional h5,
     .contato .fundamental h4,
+    .contato .fundamental h5,
     .contato .tecnico h4,
+    .contato .tecnico h5,
     .contato .medio h4,
+    .contato .medio h5,
     .contato .graduacao h4,
-    .contato .profissional h4,
-    .contato .conhecimentos h4,
+    .contato .graduacao h5,
+    .contato .complementar h4,
+    .contato .complementar h5,
+    .contato .evento h4,
+    .contato .evento h5,
+    .contato .empresa h4,
+    .contato .empresa h5,
+    .contato .competencia h4,
+    .contato .competencia h5,
     .contato .adicional h4,
-    .contato .evento h4 {
+    .contato .adicional h5 {
       margin-left: 40px;
       margin-top: 20px;
       text-align: left;
@@ -215,42 +282,47 @@ body {
     .formacao .tecnico p,
     .formacao .medio p,
     .formacao .graduacao p,
-    .formacao .profissional p,
-    .formacao .conhecimentos p,
-    .formacao .adicional p,
+    .formacao .complementar p,
     .formacao .evento p,
+    .formacao .empresa p,
+    .formacao .competencia p,
+    .formacao .adicional p,
     .experiencia .fundamental p,
     .experiencia .tecnico p,
     .experiencia .medio p,
     .experiencia .graduacao p,
-    .experiencia .profissional p,
-    .experiencia .conhecimentos p,
-    .experiencia .adicional p,
+    .experiencia .complementar p,
     .experiencia .evento p,
+    .experiencia .empresa p,
+    .experiencia .competencia p,
+    .experiencia .adicional p,
     .eventos .fundamental p,
     .eventos .tecnico p,
     .eventos .medio p,
     .eventos .graduacao p,
-    .eventos .profissional p,
-    .eventos .conhecimentos p,
-    .eventos .adicional p,
+    .eventos .complementar p,
     .eventos .evento p,
+    .eventos .empresa p,
+    .eventos .competencia p,
+    .eventos .adicional p,
     .adicionais .fundamental p,
     .adicionais .tecnico p,
     .adicionais .medio p,
     .adicionais .graduacao p,
-    .adicionais .profissional p,
-    .adicionais .conhecimentos p,
-    .adicionais .adicional p,
+    .adicionais .complementar p,
     .adicionais .evento p,
+    .adicionais .empresa p,
+    .adicionais .competencia p,
+    .adicionais .adicional p,
     .contato .fundamental p,
     .contato .tecnico p,
     .contato .medio p,
     .contato .graduacao p,
-    .contato .profissional p,
-    .contato .conhecimentos p,
-    .contato .adicional p,
-    .contato .evento p {
+    .contato .complementar p,
+    .contato .evento p,
+    .contato .empresa p,
+    .contato .competencia p,
+    .contato .adicional p {
       margin-left: 40px;
       margin-right: 40px;
       margin-bottom: 15px;
@@ -259,42 +331,70 @@ body {
     .formacao .tecnico ul,
     .formacao .medio ul,
     .formacao .graduacao ul,
-    .formacao .profissional ul,
-    .formacao .conhecimentos ul,
-    .formacao .adicional ul,
+    .formacao .complementar ul,
     .formacao .evento ul,
+    .formacao .empresa ul,
+    .formacao .competencia ul,
+    .formacao .adicional ul,
     .experiencia .fundamental ul,
     .experiencia .tecnico ul,
     .experiencia .medio ul,
     .experiencia .graduacao ul,
-    .experiencia .profissional ul,
-    .experiencia .conhecimentos ul,
-    .experiencia .adicional ul,
+    .experiencia .complementar ul,
     .experiencia .evento ul,
+    .experiencia .empresa ul,
+    .experiencia .competencia ul,
+    .experiencia .adicional ul,
     .eventos .fundamental ul,
     .eventos .tecnico ul,
     .eventos .medio ul,
     .eventos .graduacao ul,
-    .eventos .profissional ul,
-    .eventos .conhecimentos ul,
-    .eventos .adicional ul,
+    .eventos .complementar ul,
     .eventos .evento ul,
+    .eventos .empresa ul,
+    .eventos .competencia ul,
+    .eventos .adicional ul,
     .adicionais .fundamental ul,
     .adicionais .tecnico ul,
     .adicionais .medio ul,
     .adicionais .graduacao ul,
-    .adicionais .profissional ul,
-    .adicionais .conhecimentos ul,
-    .adicionais .adicional ul,
+    .adicionais .complementar ul,
     .adicionais .evento ul,
+    .adicionais .empresa ul,
+    .adicionais .competencia ul,
+    .adicionais .adicional ul,
     .contato .fundamental ul,
     .contato .tecnico ul,
     .contato .medio ul,
     .contato .graduacao ul,
-    .contato .profissional ul,
-    .contato .conhecimentos ul,
-    .contato .adicional ul,
-    .contato .evento ul {
+    .contato .complementar ul,
+    .contato .evento ul,
+    .contato .empresa ul,
+    .contato .competencia ul,
+    .contato .adicional ul {
       list-style-type: none; }
+  .formacao .complementar ul,
+  .experiencia .complementar ul,
+  .eventos .complementar ul,
+  .adicionais .complementar ul,
+  .contato .complementar ul {
+    margin-top: 20px;
+    padding-left: 10px; }
+  .formacao .empresa p,
+  .experiencia .empresa p,
+  .eventos .empresa p,
+  .adicionais .empresa p,
+  .contato .empresa p {
+    margin-left: 0px; }
+
+.home,
+.experiencia,
+.adicionais {
+  background-color: #f1f1f1; }
+
+.formacao,
+.eventos,
+.contato {
+  background-color: white; }
 
 /*# sourceMappingURL=styles.css.map */
