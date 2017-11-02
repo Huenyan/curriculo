@@ -150,7 +150,7 @@ body {
         text-align: center;
         padding-top: 20px;
         padding-bottom: 10px;
-        border-bottom: 1px solid $colorBorder;
+        border-bottom: 4px solid $colorBorder;
     }
 
     .fundamental,
@@ -173,7 +173,8 @@ body {
     .evento,
     .empresa,
     .competencia,
-    .adicional{
+    .adicional,
+    .formulario{
         border-top-left-radius: 255px 25px;
         border-top-right-radius: 25px 225px;
         border-bottom-right-radius: 225px 25px;
@@ -231,3 +232,12 @@ body {
     background-color: $colorEvenFundo;
 }
 
+.botao{
+    display: flex;
+    justify-content: center;  
+    padding-top: 4px;
+}
+
+.form{
+    margin: 20px;
+}

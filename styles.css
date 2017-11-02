@@ -103,7 +103,7 @@ body {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #4267b2; }
+    border-bottom: 4px solid #4267b2; }
   .formacao .fundamental,
   .formacao .tecnico,
   .formacao .medio,
@@ -140,6 +140,7 @@ body {
   .formacao .empresa,
   .formacao .competencia,
   .formacao .adicional,
+  .formacao .formulario,
   .experiencia .fundamental,
   .experiencia .tecnico,
   .experiencia .medio,
@@ -149,6 +150,7 @@ body {
   .experiencia .empresa,
   .experiencia .competencia,
   .experiencia .adicional,
+  .experiencia .formulario,
   .eventos .fundamental,
   .eventos .tecnico,
   .eventos .medio,
@@ -158,6 +160,7 @@ body {
   .eventos .empresa,
   .eventos .competencia,
   .eventos .adicional,
+  .eventos .formulario,
   .adicionais .fundamental,
   .adicionais .tecnico,
   .adicionais .medio,
@@ -167,6 +170,7 @@ body {
   .adicionais .empresa,
   .adicionais .competencia,
   .adicionais .adicional,
+  .adicionais .formulario,
   .contato .fundamental,
   .contato .tecnico,
   .contato .medio,
@@ -175,7 +179,8 @@ body {
   .contato .evento,
   .contato .empresa,
   .contato .competencia,
-  .contato .adicional {
+  .contato .adicional,
+  .contato .formulario {
     border-top-left-radius: 255px 25px;
     border-top-right-radius: 25px 225px;
     border-bottom-right-radius: 225px 25px;
@@ -202,6 +207,8 @@ body {
     .formacao .competencia h5,
     .formacao .adicional h4,
     .formacao .adicional h5,
+    .formacao .formulario h4,
+    .formacao .formulario h5,
     .experiencia .fundamental h4,
     .experiencia .fundamental h5,
     .experiencia .tecnico h4,
@@ -220,6 +227,8 @@ body {
     .experiencia .competencia h5,
     .experiencia .adicional h4,
     .experiencia .adicional h5,
+    .experiencia .formulario h4,
+    .experiencia .formulario h5,
     .eventos .fundamental h4,
     .eventos .fundamental h5,
     .eventos .tecnico h4,
@@ -238,6 +247,8 @@ body {
     .eventos .competencia h5,
     .eventos .adicional h4,
     .eventos .adicional h5,
+    .eventos .formulario h4,
+    .eventos .formulario h5,
     .adicionais .fundamental h4,
     .adicionais .fundamental h5,
     .adicionais .tecnico h4,
@@ -256,6 +267,8 @@ body {
     .adicionais .competencia h5,
     .adicionais .adicional h4,
     .adicionais .adicional h5,
+    .adicionais .formulario h4,
+    .adicionais .formulario h5,
     .contato .fundamental h4,
     .contato .fundamental h5,
     .contato .tecnico h4,
@@ -273,7 +286,9 @@ body {
     .contato .competencia h4,
     .contato .competencia h5,
     .contato .adicional h4,
-    .contato .adicional h5 {
+    .contato .adicional h5,
+    .contato .formulario h4,
+    .contato .formulario h5 {
       margin-left: 40px;
       margin-top: 20px;
       text-align: left;
@@ -287,6 +302,7 @@ body {
     .formacao .empresa p,
     .formacao .competencia p,
     .formacao .adicional p,
+    .formacao .formulario p,
     .experiencia .fundamental p,
     .experiencia .tecnico p,
     .experiencia .medio p,
@@ -296,6 +312,7 @@ body {
     .experiencia .empresa p,
     .experiencia .competencia p,
     .experiencia .adicional p,
+    .experiencia .formulario p,
     .eventos .fundamental p,
     .eventos .tecnico p,
     .eventos .medio p,
@@ -305,6 +322,7 @@ body {
     .eventos .empresa p,
     .eventos .competencia p,
     .eventos .adicional p,
+    .eventos .formulario p,
     .adicionais .fundamental p,
     .adicionais .tecnico p,
     .adicionais .medio p,
@@ -314,6 +332,7 @@ body {
     .adicionais .empresa p,
     .adicionais .competencia p,
     .adicionais .adicional p,
+    .adicionais .formulario p,
     .contato .fundamental p,
     .contato .tecnico p,
     .contato .medio p,
@@ -322,7 +341,8 @@ body {
     .contato .evento p,
     .contato .empresa p,
     .contato .competencia p,
-    .contato .adicional p {
+    .contato .adicional p,
+    .contato .formulario p {
       margin-left: 40px;
       margin-right: 40px;
       margin-bottom: 15px;
@@ -336,6 +356,7 @@ body {
     .formacao .empresa ul,
     .formacao .competencia ul,
     .formacao .adicional ul,
+    .formacao .formulario ul,
     .experiencia .fundamental ul,
     .experiencia .tecnico ul,
     .experiencia .medio ul,
@@ -345,6 +366,7 @@ body {
     .experiencia .empresa ul,
     .experiencia .competencia ul,
     .experiencia .adicional ul,
+    .experiencia .formulario ul,
     .eventos .fundamental ul,
     .eventos .tecnico ul,
     .eventos .medio ul,
@@ -354,6 +376,7 @@ body {
     .eventos .empresa ul,
     .eventos .competencia ul,
     .eventos .adicional ul,
+    .eventos .formulario ul,
     .adicionais .fundamental ul,
     .adicionais .tecnico ul,
     .adicionais .medio ul,
@@ -363,6 +386,7 @@ body {
     .adicionais .empresa ul,
     .adicionais .competencia ul,
     .adicionais .adicional ul,
+    .adicionais .formulario ul,
     .contato .fundamental ul,
     .contato .tecnico ul,
     .contato .medio ul,
@@ -371,7 +395,8 @@ body {
     .contato .evento ul,
     .contato .empresa ul,
     .contato .competencia ul,
-    .contato .adicional ul {
+    .contato .adicional ul,
+    .contato .formulario ul {
       list-style-type: none; }
   .formacao .complementar ul,
   .experiencia .complementar ul,
@@ -396,5 +421,13 @@ body {
 .eventos,
 .contato {
   background-color: white; }
+
+.botao {
+  display: flex;
+  justify-content: center;
+  padding-top: 4px; }
+
+.form {
+  margin: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
