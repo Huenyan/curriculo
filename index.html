@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
                     <a class="navbar-brand" href="#home">Currículo Ronyan</a>
                 </div>
 
-                <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;" role="button">
                     <ul class="nav navbar-nav">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#formacao">Formação</a></li>
@@ -220,10 +220,10 @@
                                 <ul>
                                     <li><strong>Cargo 1</strong></li>
                                     <li>01/2011 - 10/2011</li>
-                                    <p>Dicat civibus atomorum vis eu, vel movet saperet scaevola et, 
+                                </ul>
+                                <p>Dicat civibus atomorum vis eu, vel movet saperet scaevola et, 
                                         everti denique qui at. Odio putent eam ea, mel latine honestatis cu,
                                         pri summo nobis ei. </p>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -234,10 +234,10 @@
                                 <ul>
                                     <li><strong>Cargo 2</strong></li>
                                     <li>02/2012 - 10/2012</li>
-                                    <p>Dicat civibus atomorum vis eu, vel movet saperet scaevola et, 
+                                </ul>
+                                <p>Dicat civibus atomorum vis eu, vel movet saperet scaevola et, 
                                         everti denique qui at. Odio putent eam ea, mel latine honestatis cu,
                                         pri summo nobis ei. </p>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -253,10 +253,10 @@
                                 <ul>
                                     <li><strong>Cargo 3</strong></li>
                                     <li>03/2013 - 10/2013</li>
-                                    <p>Dicat civibus atomorum vis eu, vel movet saperet scaevola et, 
+                                </ul>
+                                <p>Dicat civibus atomorum vis eu, vel movet saperet scaevola et, 
                                         everti denique qui at. Odio putent eam ea, mel latine honestatis cu,
                                         pri summo nobis ei. </p>
-                                </ul>
                             </div>
                         </div>
                     </div>        
@@ -459,23 +459,23 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="nome">Nome</label>
-                                    <input name="nome" type="text" class="form-control" placeholder="Nome" required>
+                                    <input id="nome" name="nome" type="text" class="form-control" placeholder="Nome" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="telefone">Telefone</label>
-                                    <input name="telefone" type="tel" class="form-control"placeholder="Telefone" required>
+                                    <input id="telefone" name="telefone" type="tel" class="form-control" placeholder="Telefone" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <label for="email">Email</label>
-                                    <input name="email" type="email" class="form-control" placeholder="email@email.com" required>
+                                    <input id="email" name="email" type="email" class="form-control" placeholder="email@email.com" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <label for="texto">Mensagem</label>
-                                    <textarea name="texto" class="form-control" placeholder="Mensagem" rows="4" required></textarea>
+                                    <textarea id="texto" name="texto" class="form-control" placeholder="Mensagem" rows="4" required></textarea>
                                 </div>
                             </div>
                             <div class="botao">
@@ -485,6 +485,7 @@
                     </div>
 
                     <div class="col-sm-4">
+                    </div>
                 </div>
             </div>
         </section>    
