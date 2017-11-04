@@ -45,6 +45,7 @@ body {
     background-color: $colorElements; 
     margin: 0px;
     padding: 0px;
+    font-weight: bold;
 
         li {
             float: left;
@@ -236,6 +237,18 @@ body {
     display: flex;
     justify-content: center;  
     padding-top: 4px;
+}
+
+.enviar {
+    background-color: $colorElements;
+    border: none;
+    color: $colorFontFundo;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20%;
 }
 
 .form{
