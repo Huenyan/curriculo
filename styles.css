@@ -11,12 +11,10 @@ body {
 .navbar ul {
   list-style-type: none;
   overflow: hidden;
-  background-color: #4c9cef;
+  background-color: #f8f8f8;
   margin: 0px;
   padding: 0px;
   font-weight: bold; }
-  .navbar ul li {
-    float: left; }
   .navbar ul li a {
     display: block;
     color: white;
@@ -24,7 +22,7 @@ body {
     padding: 14px 16px;
     text-decoration: none; }
   .navbar ul li a:hover:not(.active) {
-    background-color: #4267b2; }
+    background-color: #4c9cef; }
 
 .profile {
   margin-top: 8px;
