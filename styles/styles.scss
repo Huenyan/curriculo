@@ -64,6 +64,7 @@ body {
 .profile{
     margin-top: 8px;
     text-align: center;
+    
     img{
         border: $borderPrimary;
     }
@@ -200,21 +201,16 @@ body {
         
         ul{
             list-style-type: none;
+            margin-left: $boxMarginTextLeft;
         }
     }
 
     .complementar{
         ul{
             margin-top: $boxMarginTitleTop;
-            padding-left: 10px;
+            margin-left: $boxMarginTextLeft;
         }
     }
-
-    .empresa{
-        p{
-            margin-left: 0px;
-        }
-    }  
 }
 
 .home,

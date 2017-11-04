@@ -396,20 +396,15 @@ body {
     .contato .competencia ul,
     .contato .adicional ul,
     .contato .formulario ul {
-      list-style-type: none; }
+      list-style-type: none;
+      margin-left: 40px; }
   .formacao .complementar ul,
   .experiencia .complementar ul,
   .eventos .complementar ul,
   .adicionais .complementar ul,
   .contato .complementar ul {
     margin-top: 20px;
-    padding-left: 10px; }
-  .formacao .empresa p,
-  .experiencia .empresa p,
-  .eventos .empresa p,
-  .adicionais .empresa p,
-  .contato .empresa p {
-    margin-left: 0px; }
+    margin-left: 40px; }
 
 .home,
 .experiencia,
