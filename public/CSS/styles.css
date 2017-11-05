@@ -435,4 +435,7 @@ body {
 .form {
   margin: 20px; }
 
+.alert {
+  display: none; }
+
 /*# sourceMappingURL=styles.css.map */
