@@ -481,7 +481,7 @@
                             <div class="botao">
                                 <button class="enviar" type="submit">Enviar</button>
                             </div>
-                            <span id="message"></span>
+                            <p id="message"></p>
                         </form>
                     </div>
 
@@ -504,7 +504,7 @@
     <script>
         $(document).ready(function(){
             var from,to,subject,text;
-            $("#send_email").click(function(){      
+            $("#send_email").submit(function(){      
                 nome=$("#nome").val();
                 subject= 'Email Curriculo - ' + $("#nome").val();
                 text='Nome: '+ $("#nome").val() + '\n' + 'Email: ' + $("#email").val() + '\n' + 
