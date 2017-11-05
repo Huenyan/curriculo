@@ -511,12 +511,12 @@
                 'Telefone: '+ $("#fone").val() + '\n' + '\n'+ $('#content').val();
                 from= $("#email").val();
 
-                $("#message").text("Sending E-mail...Please wait");
+                $("#message").text("Enviando email, aguarde.");
                 
                 $.get("/send",{from:from,subject:subject,text:text},function(data){
                 if(data=="sent")
                 {
-                    $("#message").empty().html("Email is been sent at "+to+" . Please check inbox!");
+                    $("#message").empty().html("Email enviado!");
                 }
         
                 });
