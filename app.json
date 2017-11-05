@@ -1,0 +1,7 @@
+{
+    "name": "Curriculum Ronyan",
+    "description": "Curriculo com Email.",
+    "repository": "git+https://github.com/Huenyan/tryemail",
+    "keywords": ["node", "html5", "css", "js", "nodemailer"],
+}
+
