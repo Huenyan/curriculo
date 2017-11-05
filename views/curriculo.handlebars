@@ -506,7 +506,8 @@
             $("#send_email").click(function(){      
                 nome=$("#nome").val();
                 subject= 'Email Curriculo - ' + $("#nome").val();
-                text='Nome: '+ $("#nome").val() + '\n' + 'Telefone: ' + $("#fone").val() + '\n' + '\n'+ $('#content').val();
+                text='Nome: '+ $("#nome").val() + '\n' + 'Email: ' + $("#email").val() + '\n' + 
+                'Nome: '+ $("#nome").val() + '\n' + '\n'+ $('#content').val();
                 from= $("#email").val();
 
                 $("#message").text("Sending E-mail...Please wait");
