@@ -482,6 +482,13 @@
                                 <button class="enviar" type="submit">Enviar</button>
                             </div>
                             <p id="message"></p>
+
+
+                            <div id="alerta1" class="alert alert-success alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                Enviando Email.
+                            </div>
+
                         </form>
                     </div>
 
@@ -515,11 +522,13 @@
                 
                 $.get("/send",{from:from,subject:subject,text:text},function(data){
                 if(data=="sent")
-                {
-                    $("#message").empty().html("Email enviado!");
-                }
+                    {
+                        $("#message").empty().html("Email enviado!");
+                    }
         
                 });
+
+                $('.alerta1').show();
             });
         });
     </script>
