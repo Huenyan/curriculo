@@ -481,17 +481,18 @@
                             <div class="botao">
                                 <button class="enviar" type="submit">Enviar</button>
                             </div>
+                            <p id="message"></p>
+
 
                             <div id="alerta1" class="alert alert-success alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                                 Enviando Email.
                             </div>
-
+                            
                             <div id="alerta2" class="alert alert-success alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                Email enviado!
+                                Email Enviado.
                             </div>
-
                         </form>
                     </div>
 
@@ -512,6 +513,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
+        
         $(document).ready(function(){
             var from,to,subject,text;
             $("#send_email").submit(function(){      
@@ -521,7 +523,6 @@
                 'Telefone: '+ $("#fone").val() + '\n' + '\n'+ $('#content').val();
                 from= $("#email").val();
 
-                $("#message").text("Enviando email, aguarde.");
                 $('.alerta1').show();
                 
                 $.get("/send",{from:from,subject:subject,text:text},function(data){
