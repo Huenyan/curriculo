@@ -515,6 +515,8 @@
     <script>
         
         $(document).ready(function(){
+            $('.alerta1').show();
+
             var from,to,subject,text;
             $("#send_email").submit(function(){      
                 nome=$("#nome").val();
@@ -522,8 +524,6 @@
                 text='Nome: '+ $("#nome").val() + '\n' + 'Email: ' + $("#email").val() + '\n' + 
                 'Telefone: '+ $("#fone").val() + '\n' + '\n'+ $('#content').val();
                 from= $("#email").val();
-
-                $('.alerta1').show();
                 
                 $.get("/send",{from:from,subject:subject,text:text},function(data){
                 if(data=="sent")
