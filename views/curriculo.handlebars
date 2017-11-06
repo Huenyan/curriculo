@@ -482,12 +482,12 @@
                                 <button class="enviar" type="submit">Enviar</button>
                             </div>
 
-                            <div id="alerta1" class="alert alert-success alert-dismissable">
+                            <div id="alerta1" class="alert alert-success alert-dismissable fade show">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                                 Enviando Email.
                             </div>
                             
-                            <div id="alerta2" class="alert alert-success alert-dismissable">
+                            <div id="alerta2" class="alert alert-success alert-dismissable fade show">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                                 Email Enviado.
                             </div>
@@ -511,11 +511,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-        $('alerta1').fade();
-        $('alerta2').fade();
-        
+        $('#alerta1').fade();
+        $('#alerta2').fade();
+
         $(document).ready(function(){
-            $('alerta1').show();
+            $('#alerta1').show();
 
             var from,to,subject,text;
             $("#send_email").submit(function(){      
@@ -528,7 +528,7 @@
                 $.get("/send",{from:from,subject:subject,text:text},function(data){
                 if(data=="sent")
                     {
-                        $('alerta2').show();
+                        $('#alerta2').show();
                     }
                 });
             });
