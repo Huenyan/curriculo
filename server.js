@@ -42,14 +42,14 @@ app.get('/send',function(req,res){
     }
     console.log(mailOptions);
     
-    smtpTransport.sendMail(mailOptions, function(error, res){
-     if(error){
-        console.log(error);
-        res.end("error");
-     }else{
-            console.log("Message sent: " + res.message);
-        res.end("sent");
-         }
+    smtpTransport.sendMail(mailOptions, function(error, response){
+        if(error){
+            console.log(error);
+            res.end("error");
+        }else{
+            console.log("Message sent: " + nodemailer.getTestMessageUrl(response));
+            res.end("sent");
+        }
     });
 });
 
