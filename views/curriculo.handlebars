@@ -519,10 +519,7 @@
                 
                 $.get("/send",{from:from,subject:subject,text:text},function(data){
                
-                if(data=="enviado")
-                    {
-                        alert("Email enviado!");
-                    }
+                alert("Email enviado!");
                 });
             });
         });
