@@ -517,9 +517,8 @@
                 'Telefone: '+ $("#fone").val() + '\n' + '\n'+ $('#content').val();
                 from= $("#email").val();
                 
-                $.get("/send",{from:from,subject:subject,text:text},function(data){
-               
                 alert("Email enviado!");
+                $.get("/send",{from:from,subject:subject,text:text},function(data){
                 });
             });
         });
