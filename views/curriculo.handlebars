@@ -481,8 +481,6 @@
                             <div class="botao">
                                 <button class="enviar" type="submit">Enviar</button>
                             </div>
-                            <p id="message"></p>
-
 
                             <div id="alerta1" class="alert alert-success alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -515,7 +513,7 @@
     <script>
         
         $(document).ready(function(){
-            $('.alerta1').show();
+            $('.alert').show();
 
             var from,to,subject,text;
             $("#send_email").submit(function(){      
