@@ -511,9 +511,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
+        $('alerta1').fade();
+        $('alerta2').fade();
         
         $(document).ready(function(){
-            $('.alert').show();
+            $('alerta1').show();
 
             var from,to,subject,text;
             $("#send_email").submit(function(){      
@@ -526,7 +528,7 @@
                 $.get("/send",{from:from,subject:subject,text:text},function(data){
                 if(data=="sent")
                     {
-                        $('.alerta2').show();
+                        $('alerta2').show();
                     }
                 });
             });
