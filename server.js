@@ -48,7 +48,7 @@ app.get('/send',function(req,res){
             res.end("error");
         }else{
             console.log("Message sent: " + nodemailer.getTestMessageUrl(response));
-            res.end("sent");
+            res.end("enviado");
         }
     });
 });
