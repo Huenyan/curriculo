@@ -484,13 +484,9 @@
 
                             <div id="alerta1" class="alert alert-success alert-dismissable fade show">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                Enviando Email.
+                                Email enviado.
                             </div>
                             
-                            <div id="alerta2" class="alert alert-success alert-dismissable fade show">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                Email Enviado.
-                            </div>
                         </form>
                     </div>
 
@@ -512,8 +508,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            alert("Enviando email!");
-
+            
             var from,to,subject,text;
             $("#send_email").submit(function(){      
                 nome=$("#nome").val();
@@ -523,6 +518,7 @@
                 from= $("#email").val();
                 
                 $.get("/send",{from:from,subject:subject,text:text},function(data){
+               
                 if(data=="sent")
                     {
                         alert("Email enviado!");

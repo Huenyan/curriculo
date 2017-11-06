@@ -42,12 +42,12 @@ app.get('/send',function(req,res){
     }
     console.log(mailOptions);
     
-    smtpTransport.sendMail(mailOptions, function(error, response){
+    smtpTransport.sendMail(mailOptions, function(error, res){
      if(error){
-            console.log(error);
+        console.log(error);
         res.end("error");
      }else{
-            console.log("Message sent: " + response.message);
+            console.log("Message sent: " + res.message);
         res.end("sent");
          }
     });
